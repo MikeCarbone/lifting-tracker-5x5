@@ -185,6 +185,7 @@ class App extends Component {
 
     finishSet = e => {
         e.target.innerHTML = '5';
+        e.target.style.backgroundColor = '#f7c500';
         (async() => {
             await this.setState({ timerEl: null });
             await this.setState({ timerEl: <Timer active /> });
